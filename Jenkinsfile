@@ -8,6 +8,10 @@ pipeline {
     {
       steps {
            echo 'BUILD  - Amar Stage'
+          
+        script {
+                     def test = 2+2 > 3 ? 'cool correct' : 'not cool correct'  
+          }
       }    
      
     }
